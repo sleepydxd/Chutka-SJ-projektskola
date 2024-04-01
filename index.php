@@ -28,28 +28,27 @@
     <h2>Overview</h2>
     <?php include 'data.php'; ?>
     <p><?php echo $gameInfo["overview"]; ?></p>
-    <!-- Add more overview content as needed -->
+    
 </section>
 <section id="gameplay">
     <h2>Gameplay</h2>
     <p><?php echo $gameInfo["gameplay"]; ?></p>
-    <!-- Add more gameplay content as needed -->
+    
 </section>
 <section id="characters">
     <h2>Characters</h2>
     <p><?php echo $gameInfo["characters"]; ?></p>
-    <!-- Add more character information as needed -->
+    
 </section>
-<!-- Add more sections and content as needed -->
+
 
 <main>
     <?php
-    // Define a function to generate HTML for displaying an image
+    
     function displayImage($src, $alt) {
         echo "<img src='$src' alt='$alt'>";
     }
 
-    // Call the function to display an image
     displayImage("diablo4.png", "Diablo 4");
     ?>
 </main>

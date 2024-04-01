@@ -34,16 +34,15 @@
 <div class="container">
     <h2>Thank You for Logging In</h2>
     <p>Welcome to Diablo 4!</p>
-    <div id="countdown">10.000</div> <!-- Initial display with milliseconds -->
+    <div id="countdown">10.000</div> 
 </div>
 
 <script>
-    // Countdown from 10 to 0
-    var countdown = 10000; // Start countdown from 10 seconds in milliseconds
+    var countdown = 10000;
     var countdownElement = document.getElementById('countdown');
 
     function updateCountdown() {
-        countdown -= 10; // Subtract 10 milliseconds
+        countdown -= 10; 
         if (countdown < 0) {
             countdown = 0;
         }
@@ -52,11 +51,11 @@
         countdownElement.textContent = seconds + '.' + milliseconds.toString().padStart(3, '0');
         if (countdown === 0) {
             clearInterval(countdownInterval);
-            window.location.href = 'index.php'; // Redirect to index.php after countdown
+            window.location.href = 'index.php'; 
         }
     }
 
-    var countdownInterval = setInterval(updateCountdown, 1); // Update countdown every 10 milliseconds
+    var countdownInterval = setInterval(updateCountdown, 1);
 </script>
 
 </body>

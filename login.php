@@ -67,9 +67,9 @@
 </div>
 <?php
 $servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "your_database_name";
+$username = "username1";
+$password = "password1";
+$dbname = "gaming_users";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
